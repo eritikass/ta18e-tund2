@@ -1,5 +1,5 @@
 let random = function (min, max) {
-    return Math.random() * (max - min) + min
+    return Math.random() * (max - min) + min;
 };
 
 test('random: between 1 and 5', () => {

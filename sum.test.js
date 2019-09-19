@@ -1,16 +1,16 @@
 const sum = require('./sum.js');
 
 test('sum "a"+5 is error', () => {
-   expect(function() {
-       sum("a", "5")
-    }).toThrow("all arguments need to be numbers!!!");
+    expect(function() {
+        sum('a', '5');
+    }).toThrow('all arguments need to be numbers!!!');
 });
 
 test('errorror', () => {
     expect(function() {
         throw new Error();
-     }).toThrow();
- });
+    }).toThrow();
+});
 
 test('sum 1+2 => 3', () => {
     expect(sum(1, 2)).toBe(3);
